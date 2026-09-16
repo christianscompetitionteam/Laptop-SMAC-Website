@@ -512,6 +512,50 @@ table.schedule td.day-cell { font-family: var(--font-display); font-weight: 650;
 .feature-item p { margin-bottom: 0; }
 .feature-item strong { color: var(--ink); }
 
+/* ---------- Banner / editorial images ---------- */
+.banner-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--paper-deep);
+  aspect-ratio: 16 / 7;
+}
+.banner-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.banner-img.is-tall { aspect-ratio: 4 / 3; }
+.figure-img {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+.figure-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* ---------- Blog ---------- */
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border: 1px solid var(--paper-line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+.blog-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.blog-card .blog-card-img { aspect-ratio: 16/10; background: var(--paper-deep); }
+.blog-card .blog-card-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.blog-card .blog-card-body { padding: 1.4rem; display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+.blog-card .blog-meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); }
+.blog-card h3 { margin-bottom: 0; font-size: 1.25rem; }
+.blog-card p { font-size: 0.9rem; margin-bottom: 0; }
+.blog-card .card-link { margin-top: auto; font-weight: 650; color: var(--crimson); font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.35em; }
+.blog-card .card-link::after { content: "→"; transition: transform 0.15s ease; }
+.blog-card:hover .card-link::after { transform: translateX(3px); }
+
+.article-body { max-width: 68ch; }
+.article-body p { color: var(--ink-soft); max-width: none; }
+.article-body h2 { margin-top: 1.8rem; }
+.article-body ul { color: var(--ink-soft); padding-left: 1.2rem; }
+.article-body li { margin-bottom: 0.5rem; }
+
 /* ---------- CTA band ---------- */
 .cta-band {
   background: var(--crimson);

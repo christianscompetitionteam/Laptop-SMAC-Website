@@ -35,6 +35,8 @@ PROGRAMS = [
         slug="preschool-martial-arts-classes-scottsdale",
         name="Preschool Martial Arts",
         tag="Ages 3–5",
+        banner="kids-silhouette.png",
+        banner_alt="Silhouettes of young students practicing a stance in a sunlit dojo",
         short="The perfect blend of building gross motor skills and having TONS of fun! Our preschool martial arts program in Scottsdale gives your little one the tools they need to prepare for school and life.",
         long="Discover why parents love our Preschool Martial Arts Program in Scottsdale. It’s the perfect blend of gross motor skills, personal development, and character enrichment, and gives your little one an edge when they enter a busy school setting.",
         bullets=[
@@ -48,6 +50,8 @@ PROGRAMS = [
         slug="kids-martial-arts-classes-scottsdale",
         name="Kids Martial Arts",
         tag="Ages 6–12",
+        banner="kids-silhouette.png",
+        banner_alt="Silhouettes of young students practicing a stance in a sunlit dojo",
         short="Our kids martial arts program in Scottsdale gives your child the tools they need to protect themselves with self defense, but it also equips them with incredible life skills like focus, discipline, respect, and more! Watch them improve in school, too!",
         long="Parents LOVE our Scottsdale Kids Martial Arts program because it teaches not only self defense, but also vital life skills like focus, discipline, respect, and more! Watch your child’s confidence flourish and their grades improve with this awesome Child Greatness program.",
         bullets=[
@@ -62,6 +66,8 @@ PROGRAMS = [
         slug="teen-martial-arts-classes-scottsdale",
         name="Teen Martial Arts",
         tag="Ages 13–17",
+        banner="hero-kick.png",
+        banner_alt="Martial artist executing a front kick, motion blur",
         short="The ultimate tech alternative that gets teens active and engaged- and helps them feel confident, too. Help your teen make friends and get off their screens with our teen martial arts classes in Scottsdale!",
         long="Combining confidence-raising fitness and life-changing self defense, our Scottsdale Teen Martial Arts program keeps your teen’s wellness and happiness in mind. It’s time to get your teenager active, making new friends and bettering themselves.",
         bullets=[
@@ -75,6 +81,8 @@ PROGRAMS = [
         slug="adult-martial-arts-classes-scottsdale",
         name="Adult Martial Arts",
         tag="Adults",
+        banner="hero-kick.png",
+        banner_alt="Martial artist executing a front kick, motion blur",
         short="Great friends, great fun- crush your fitness goals with our adult martial arts classes in Scottsdale. Learn self defense skills and martial arts together while having a ton of fun. No more boring workouts!",
         long="Our Scottsdale Adult Martial Arts program combines next-level fitness with next-level FUN — no more boring workouts! It’s time to switch up your routine and get the results you’ve been looking for in an awesome community of like-minded people.",
         bullets=[
@@ -88,6 +96,8 @@ PROGRAMS = [
         slug="teen-jujutsu-classes",
         name="Teen Jujutsu",
         tag="Ages 13+",
+        banner="jujutsu-grapple.png",
+        banner_alt="Two students grappling on the tatami mat, motion blur",
         short="Today’s teens need more than just a workout — they need a place where they can challenge themselves, build confidence, and learn real skills that matter. That’s exactly what our Teen Jujutsu classes in Scottsdale provide.",
         long="Give your teen the tools to succeed on and off the mat with our Teen Jujutsu classes in Scottsdale. Designed specifically for ages 13+, this program blends the tradition of martial arts with the practical skills today’s teens need most.",
         bullets=[
@@ -101,6 +111,8 @@ PROGRAMS = [
         slug="adult-jujutsu-classes",
         name="Adult Jujutsu",
         tag="Adults",
+        banner="jujutsu-grapple.png",
+        banner_alt="Two students grappling on the tatami mat, motion blur",
         short="Perfect for a mix of self-defense and real-world applications, adult Jujutsu in Scottsdale is a must if you’re looking for serious martial arts. Jujutsu in Scottsdale will transform your physique while crushing your fitness goals, all while you learn useful and practical self-defense skills.",
         long="Our Scottsdale adult Jujutsu classes are no joke! If you’re ready to ramp up your fitness like never before, learn real-world self defense skills and make new friends while you learn Jujutsu, this is the program for you!",
         bullets=[
@@ -114,6 +126,8 @@ PROGRAMS = [
         slug="weapons-classes-scottsdale",
         name="Weapons",
         tag="All ranks",
+        banner="weapons-rack.png",
+        banner_alt="Traditional kobudo weapons — bo staff, nunchaku, and sai — on display",
         short="Transform your entire body into a self-defense machine while learning a skill set that could save your life.",
         long="Protect yourself and learn real-world self defense skills with Weapons classes! Our Kobudo program trains traditional Okinawan weapons in a safe, structured environment.",
         bullets=[
@@ -455,6 +469,149 @@ EVENTS_2026 = [
     ("December", "TBD", "Holiday Party", "Date to be announced"),
 ]
 
+BLOG_POSTS = [
+    dict(
+        slug="5-ways-martial-arts-builds-confidence-in-kids",
+        title="5 Ways Martial Arts Builds Confidence in Kids",
+        date="2026-01-14",
+        tag="Kids & Parenting",
+        banner="kids-silhouette.png",
+        banner_alt="Silhouettes of young students practicing a stance in a sunlit dojo",
+        excerpt="Confidence isn’t something you can hand a child — it’s built one small win at a time. Here’s how a structured martial arts program does exactly that.",
+        body="""Every parent has heard some version of “martial arts builds confidence,” and it’s tempting to file it away as a marketing line. But the mechanism behind it is pretty concrete, and it shows up in specific, repeatable ways in our Preschool and Kids programs.
+
+## 1. Small goals, delivered often
+A belt system breaks a huge, abstract goal (“be good at karate”) into dozens of small, achievable ones. A stripe on a belt, a new kata, a passed stance check — kids get to feel the specific, physical proof of progress far more often than they would waiting for a report card.
+
+## 2. Performing under (low-stakes) pressure
+Reciting a kata in front of the class, or sparring in front of parents in the bleacher seats, is a small dose of performance pressure in a safe, supportive room. Kids who practice being looked at while they try something hard get more comfortable doing that everywhere else — the classroom, the stage, the field.
+
+## 3. A vocabulary for self-control
+Focus, discipline, and respect aren’t abstract virtues in a dojo — they’re words a 7-year-old hears and practices every single class, attached to concrete actions like bowing in, waiting their turn, and listening for a command. That vocabulary travels home and to school.
+
+## 4. Real self-defense, not just a slogan
+Confidence that stands up to a bully isn’t bravado — it’s knowing, physically, that you could protect yourself if you had to. That knowledge changes how a kid carries themselves, which is usually enough to defuse a situation before it starts.
+
+## 5. A community that notices you
+In a class of 15, an instructor learns your name, your goals, and your sticking points. That kind of attention, given consistently over months and years, is one of the most reliable confidence-builders there is — and it’s a big part of why so many SMAC families stick around long after their first belt.""",
+    ),
+    dict(
+        slug="what-to-expect-your-first-class",
+        title="What to Expect at Your First Class",
+        date="2026-02-03",
+        tag="New Students",
+        banner="hero-kick.png",
+        banner_alt="Martial artist executing a front kick, motion blur",
+        excerpt="Walking into a dojo for the first time can feel intimidating. Here’s exactly what happens, from the moment you check in to your first bow-out.",
+        body="""If you’ve never set foot in a martial arts school before, it’s completely normal to feel a little nervous about your first class. Here’s what actually happens, step by step.
+
+## Before class
+You’ll check in at the front desk and meet the instructor teaching your program. Bring comfortable workout clothes and a water bottle — we’ll get you set up with a loaner uniform if you don’t have one yet. Parents are welcome to watch from the bleacher seating on any of our three training floors for the entire class.
+
+## The warm-up
+Class opens with a formal bow-in, a tradition that marks the transition from the outside world into training. From there, expect a warm-up built around the basic movements of Wado Ryu karate: stances, blocks, and strikes, broken down slowly so a first-timer can follow along right next to students who have trained for years.
+
+## The main class
+Depending on the program, you’ll work through basics (kihon), a simple form (kata), and some partner drills. Nobody expects a first-time student to keep up perfectly — instructors are actively watching for exactly that, and will adjust pace and correct form one-on-one.
+
+## Bow-out
+Class ends the way it began: lined up by rank, with a formal bow. Most first-time students are surprised by how much they picked up in forty-five minutes, and by how normal it starts to feel almost immediately.
+
+## After class
+We’ll talk through what you thought, answer any questions, and help you figure out which program and schedule fits your family best. No pressure, no hard sell — just an honest conversation about whether SMAC is a good fit.""",
+    ),
+    dict(
+        slug="belt-testing-101",
+        title="Belt Testing 101: How Promotion Works at SMAC",
+        date="2026-02-24",
+        tag="Belt Ranks",
+        banner="belt-knot.png",
+        banner_alt="Close-up of hands tying a black belt",
+        excerpt="White to black isn’t a straight line — it’s a ladder with real rungs. Here’s how our testing schedule and curriculum actually work.",
+        body="""“How long until my kid gets their black belt?” is one of the most common questions we get, and the honest answer is: it depends on the student. But the structure behind that answer is very concrete, and it’s worth understanding.
+
+## Testing happens four times a year
+SMAC holds formal belt testing in March, June, September, and December (exact dates can shift for June, September, and December — check the current Schedule page). Each testing date is organized by rank group, so a Green/Purple belt tests on a different evening than a Teen/Adult or Brown Belt candidate.
+
+## Every rank has a curriculum
+Testing isn’t a formality — it’s a checklist. Teen/Adult testing, for example, covers a set list of basics (lunge punch, low block, front kick and its variations), advanced basics, a kata matched to the student’s current belt, and striking combinations. Brown Belt testing adds spinning back kick and roundhouse kick fundamentals and specific kata — Shodan, Nidan, and Kushanku. Instructors review the full curriculum for each test in class beforehand, so nobody walks in unprepared.
+
+## Belt promotion boards
+Several of our senior instructors, including Mary Tatum, sit on SMAC’s Belt Promotion Board, reviewing testing performance and signing off on advancement. It’s a second set of experienced eyes on every promotion, not just the judgment of a single instructor.
+
+## Why the pace varies
+An adult training two nights a week and a homeschooled teen training five will simply progress at different speeds — and that’s by design. We’d rather a student earn each belt honestly than rush a rank they can’t yet demonstrate. What stays consistent is the structure: four testing windows a year, a clear curriculum, and instructors who will tell you exactly what you need to work on before your next attempt.""",
+    ),
+    dict(
+        slug="teens-trading-screens-for-the-dojo",
+        title="Why Teens Are Trading Screen Time for the Dojo",
+        date="2026-03-17",
+        tag="Teens",
+        banner="jujutsu-grapple.png",
+        banner_alt="Two students grappling on the tatami mat, motion blur",
+        excerpt="Between school, social media, and everything in between, teens are more sedentary and more online than ever. Here’s what a few hours a week on the mat can change.",
+        body="""Teenagers today spend more time looking at a screen than any generation before them — and a lot of parents are looking for something that gets their teen moving, off their phone, and around other people without a fight at the dinner table. Martial arts consistently works for reasons that have very little to do with punching and kicking.
+
+## It’s social in a way that doesn’t feel forced
+Unlike a lot of team sports, there’s no bench. Every teen in a Teen Martial Arts or Teen Jujutsu class is training, drilling with a partner, or sparring — which means the social connection happens naturally, shoulder to shoulder, instead of through a screen.
+
+## Grappling gives high-energy teens somewhere to put it
+Our Teen Jujutsu program, taught under Hoteikan Jujutsu’s certified coaches, channels a teenager’s competitive energy into a highly technical, physically demanding skill — ground control, positioning, real self-defense — rather than letting it curdle into restlessness or conflict elsewhere.
+
+## Belt testing gives them a goal that isn’t graded by someone else
+Teenagers get a lot of external evaluation — grades, college prep, social media. A belt test is one of the few goals that’s entirely theirs: they set the pace, they put in the reps, and they either demonstrate the material or they don’t. That kind of ownership is rare, and teens respond to it.
+
+## It’s a real, practical skill
+Self-defense isn’t an abstraction for a teenager who’s starting to navigate more of the world independently — driving, part-time jobs, going out with friends. Knowing they can protect themselves is a different kind of confidence than being told to “be careful.”
+
+If your teen has been resistant to “just go outside and do something,” a trial class is a low-pressure way to see if this is the something that sticks.""",
+    ),
+    dict(
+        slug="meet-the-elite-competition-team",
+        title="Meet the SMAC Elite Competition Team",
+        date="2026-04-08",
+        tag="Competition",
+        banner="hero-kick.png",
+        banner_alt="Martial artist executing a front kick, motion blur",
+        excerpt="Led by Christian Stienstra, our Elite Competition Team trains students who want to take their kata and kumite beyond the dojo and onto the national stage.",
+        body="""Not every student wants to compete — and that’s completely fine, most don’t. But for the ones who do, SMAC runs a dedicated Elite Competition Team for students ready to take their training beyond belt testing and onto the tournament floor.
+
+## Led by a competitor, not just a coach
+The team is headed by Christian Stienstra, an Elite Instructor who has trained at SMAC since 2014. Christian is a two-time Junior US Team Member, an ISKF National Team Member, a 7-time US Open medalist, and a 5-time National Kumite medalist — which means the athletes on our Elite team are learning tournament kata and kumite from someone who has stood on those exact mats himself, recently.
+
+## A coaching staff with real credentials
+Scott Harrow, SMAC Elite Competition Team Coach since 2013, is USANKF Kata and Kumite certified and SafeSport accredited. Between Christian and Scott — and the rest of our Elite Instructor team, several of whom have competed internationally for Team USA — competitors get coaching grounded in current rules, current judging standards, and real tournament experience.
+
+## What it actually involves
+Competition class runs several nights a week (see the current class Schedule for exact times), on top of regular belt-level training. It’s not a replacement for the core curriculum — it’s an addition, for students who’ve already built a strong foundation and want to sharpen it against outside competition.
+
+## Is it right for your student?
+If your student has been asking about tournaments, or an instructor has mentioned they might be ready, the best next step is a conversation with your instructor. The Elite team is an invitation, not a requirement — and it exists because some of our students genuinely love the sport side of martial arts as much as the traditional side.""",
+    ),
+    dict(
+        slug="wado-ryu-vs-jujutsu",
+        title="Wado Ryu vs. Jujutsu: What’s the Difference, and Do You Need Both?",
+        date="2026-05-05",
+        tag="Martial Arts 101",
+        banner="facility-floor.png",
+        banner_alt="An open martial arts training floor with mats and bleacher seating",
+        excerpt="SMAC teaches both a striking art and a grappling art under one roof. Here’s what actually separates them — and why a lot of our students end up training both.",
+        body="""New families often ask whether they should sign up for karate or Jujutsu, assuming they need to choose one. At SMAC, that’s less of an either/or than it sounds.
+
+## Wado Ryu: distance and striking
+Our core curriculum is Wado Ryu karate, taught under the Wado International Karate Federation (WIKF). Wado Ryu is a striking art built around body-shifting — using footwork and angles to avoid an attack while striking, rather than absorbing contact head-on. It’s the foundation of our Preschool through Adult Martial Arts programs, and the art most of our belt testing curriculum is built around.
+
+## Hoteikan Jujutsu: control at close range
+Once a confrontation closes to grappling range, striking distance stops mattering. That’s where Jujutsu comes in. All grappling instruction at SMAC runs under Hoteikan Jujutsu, led by Chief Instructor Sensei Dan Pensabene (6th degree black belt, San Do Ichi Ryu Jujutsu), with senior instructors Sensei Ken Wong and Sensei Kirk Householder. It’s taught on the same Olympic-style tatami mats used in judo competition, with an emphasis on ground control and practical self-defense over striking.
+
+## Why a lot of students train both
+A striking art and a grappling art cover different ranges of a real confrontation — which is exactly why so many serious martial artists eventually train both. Several of our own instructors, including Mary Tatum, hold rank in both Wado Ryu karate and Jujutsu-family arts. You don’t have to start there: most students begin with our core Martial Arts program and add Teen or Adult Jujutsu later, once they’re looking for the next challenge.
+
+## So which should you start with?
+If you’re not sure, start with the program that matches your age group’s core Martial Arts class — it’s the foundation everything else builds on. Jujutsu is there when you’re ready for it, not instead of it.""",
+    ),
+]
+
 # ---------------------------------------------------------------------------
 # Shared markup
 # ---------------------------------------------------------------------------
@@ -709,7 +866,11 @@ def build_home():
           <span class="eyebrow">Exclusive online offer</span>
           <h3>Request more information</h3>
           <p>Tell us a bit about your family and we&rsquo;ll follow up to get you on the mat.</p>
-          <form class="form-grid" id="lead-form">
+          <form class="form-grid" id="lead-form" name="trial-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="trial-request" />
+            <p style="position:absolute; left:-9999px;" aria-hidden="true">
+              <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
             <div class="field">
               <label for="first_name">First name</label>
               <input id="first_name" name="first_name" type="text" required />
@@ -985,6 +1146,9 @@ def build_about():
             potential of each student. Three separate training floors let us keep class sizes small and skill
             levels together.</p>
         </div>
+        <div class="banner-img" style="margin-bottom:2rem;">
+          <img src="assets/img/facility-floor.png" alt="An open martial arts training floor with mats and bleacher seating" loading="lazy" />
+        </div>
         <div class="feature-list">
           {facility_items}
         </div>
@@ -1120,6 +1284,14 @@ def build_program_page(p, all_programs):
       </div>
     </div>
 
+    <section class="section--tight">
+      <div class="container">
+        <div class="banner-img">
+          <img src="{root}assets/img/{p['banner']}" alt="{p['banner_alt']}" loading="lazy" />
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
         <div class="grid grid-cols-2" style="gap:3rem; align-items:start;">
@@ -1236,13 +1408,16 @@ def build_schedule():
 
     <section class="section section--deep">
       <div class="container">
-        <div class="head-row">
+        <div class="grid grid-cols-2" style="gap:2.5rem; align-items:center; margin-bottom:2.5rem;">
+          <div class="figure-img" style="aspect-ratio:4/3;">
+            <img src="assets/img/belt-knot.png" alt="Close-up of hands tying a black belt" loading="lazy" />
+          </div>
           <div>
             <span class="eyebrow">Belt testing</span>
             <h2>2026 testing schedule</h2>
+            <p>Testing runs four times a year. June, September, and December dates may change &mdash; confirm with
+              your instructor.</p>
           </div>
-          <p>Testing runs four times a year. June, September, and December dates may change &mdash; confirm with your
-            instructor.</p>
         </div>
         <div class="grid grid-cols-4">
           {testing_blocks}
@@ -1341,27 +1516,130 @@ def build_events():
 # Blog / Client Info & Media / Privacy / Terms
 # ---------------------------------------------------------------------------
 
+MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+
+def format_date(iso_date):
+    y, m, d = iso_date.split("-")
+    return f"{MONTH_NAMES[int(m) - 1]} {int(d)}, {y}"
+
+
+def markdown_lite_to_html(text):
+    """Turns '## Heading' lines and blank-line-separated paragraphs into HTML."""
+    blocks = []
+    for chunk in text.strip().split("\n\n"):
+        chunk = chunk.strip()
+        if not chunk:
+            continue
+        lines = chunk.split("\n")
+        if lines[0].startswith("## "):
+            blocks.append(f"<h2>{lines[0][3:].strip()}</h2>")
+            rest = "\n".join(lines[1:]).strip()
+            if rest:
+                blocks.append(f"<p>{rest}</p>")
+        else:
+            blocks.append(f"<p>{chunk}</p>")
+    return "\n        ".join(blocks)
+
+
 def build_blog():
     root = ""
+    posts_sorted = sorted(BLOG_POSTS, key=lambda p: p["date"], reverse=True)
+    cards = "\n      ".join(
+        f"""<a class="blog-card" href="blog/{p['slug']}.html">
+        <div class="blog-card-img"><img src="assets/img/{p['banner']}" alt="{p['banner_alt']}" loading="lazy" /></div>
+        <div class="blog-card-body">
+          <span class="blog-meta">{format_date(p['date'])} &middot; {p['tag']}</span>
+          <h3>{p['title']}</h3>
+          <p>{p['excerpt']}</p>
+          <span class="card-link">Read the post</span>
+        </div>
+      </a>"""
+        for p in posts_sorted
+    )
     body = f"""
     <div class="page-header">
       <div class="container">
         <div class="breadcrumb"><a href="index.html">Home</a> / Blog</div>
         <span class="eyebrow">From the dojo</span>
         <h1>Blog</h1>
-        <p class="lede">We&rsquo;re rebuilding the SMAC blog on this new site. In the meantime, the fastest way to
-          see what&rsquo;s happening at the dojo is our Facebook and Instagram, where we post class highlights,
-          tournament results, and event photos.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="{SOCIALS['Facebook']}" target="_blank" rel="noopener">Follow on Facebook</a>
-          <a class="btn btn-ghost" href="{SOCIALS['Instagram']}" target="_blank" rel="noopener">Follow on Instagram</a>
-        </div>
+        <p class="lede">Notes on training, testing, and what to expect at SMAC &mdash; written by our team. For
+          in-the-moment class photos and tournament results, follow us on
+          <a href="{SOCIALS['Facebook']}" target="_blank" rel="noopener">Facebook</a> and
+          <a href="{SOCIALS['Instagram']}" target="_blank" rel="noopener">Instagram</a>.</p>
       </div>
     </div>
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-3">
+          {cards}
+        </div>
+      </div>
+    </section>
 """
     write("blog.html", page(
         "Blog",
         "News, tournament results, and updates from Scottsdale Martial Arts Center.",
+        root, "blog", body,
+    ))
+
+
+def build_blog_post(post, all_posts):
+    root = "../"
+    others = [p for p in all_posts if p["slug"] != post["slug"]][:3]
+    other_cards = "\n      ".join(
+        f"""<a class="blog-card" href="{o['slug']}.html">
+        <div class="blog-card-img"><img src="{root}assets/img/{o['banner']}" alt="{o['banner_alt']}" loading="lazy" /></div>
+        <div class="blog-card-body">
+          <span class="blog-meta">{format_date(o['date'])} &middot; {o['tag']}</span>
+          <h3>{o['title']}</h3>
+          <p>{o['excerpt']}</p>
+          <span class="card-link">Read the post</span>
+        </div>
+      </a>"""
+        for o in others
+    )
+    body = f"""
+    <div class="page-header">
+      <div class="container">
+        <div class="breadcrumb"><a href="{root}index.html">Home</a> / <a href="{root}blog.html">Blog</a> / {post['title']}</div>
+        <span class="eyebrow">{format_date(post['date'])} &middot; {post['tag']}</span>
+        <h1>{post['title']}</h1>
+        <p class="lede">{post['excerpt']}</p>
+      </div>
+    </div>
+    <section class="section--tight">
+      <div class="container">
+        <div class="banner-img">
+          <img src="{root}assets/img/{post['banner']}" alt="{post['banner_alt']}" loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="article-body">
+          {markdown_lite_to_html(post['body'])}
+        </div>
+      </div>
+    </section>
+    <section class="section section--deep">
+      <div class="container">
+        <div class="head-row">
+          <div>
+            <span class="eyebrow">Keep reading</span>
+            <h2>More from the blog</h2>
+          </div>
+          <a class="btn btn-ghost btn-sm" href="{root}blog.html">All posts</a>
+        </div>
+        <div class="grid grid-cols-3">
+          {other_cards}
+        </div>
+      </div>
+    </section>
+"""
+    write(f"blog/{post['slug']}.html", page(
+        post["title"],
+        post["excerpt"],
         root, "blog", body,
     ))
 
@@ -1443,14 +1721,36 @@ def build_favicon():
     write("assets/img/favicon.svg", svg)
 
 
+def build_thanks():
+    root = ""
+    body = f"""
+    <section class="section" style="min-height:50vh; display:flex; align-items:center;">
+      <div class="container center">
+        <span class="eyebrow" style="justify-content:center;">Thank you</span>
+        <h1>We’ve got your message</h1>
+        <p class="lede mx-auto">A member of the SMAC team will reach out soon. In the meantime, feel free to browse
+          our <a href="programs/">programs</a> or check the <a href="schedule.html">class schedule</a>.</p>
+        <a class="btn btn-primary" href="index.html">Back to home</a>
+      </div>
+    </section>
+"""
+    write("thanks.html", page(
+        "Thank You",
+        "Thanks for reaching out to Scottsdale Martial Arts Center — we'll be in touch soon.",
+        root, "", body,
+    ))
+
+
 def build_sitemap():
     pages = ["", "about.html", "schedule.html", "events.html", "blog.html", "client-info-media.html", "privacy.html", "terms.html"]
     urls = "\n  ".join(f"<url><loc>https://www.smacus.com/{p}</loc></url>" for p in pages)
     prog_urls = "\n  ".join(f"<url><loc>https://www.smacus.com/programs/{p['slug']}.html</loc></url>" for p in PROGRAMS)
+    blog_urls = "\n  ".join(f"<url><loc>https://www.smacus.com/blog/{p['slug']}.html</loc></url>" for p in BLOG_POSTS)
     xml = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {urls}
   {prog_urls}
+  {blog_urls}
 </urlset>
 """
     write("sitemap.xml", xml)
@@ -1469,10 +1769,13 @@ def main():
     build_schedule()
     build_events()
     build_blog()
+    for post in BLOG_POSTS:
+        build_blog_post(post, BLOG_POSTS)
     build_client_media()
     build_legal_stub("privacy", "Privacy Policy", "privacy", "Scottsdale Martial Arts Center respects your privacy. We collect only the information needed to run our programs, communicate with members, and process billing, and we never sell your information to third parties.")
     build_legal_stub("terms", "Terms of Service", "terms", "By enrolling at or using services from Scottsdale Martial Arts Center, you agree to our membership terms, class policies, and code of conduct.")
     build_favicon()
+    build_thanks()
     build_sitemap()
 
 

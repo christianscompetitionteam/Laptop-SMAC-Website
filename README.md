@@ -31,10 +31,16 @@ happen once.
 
 ## Notes for the site owner
 
-- **Lead form**: the "Request more information" form on the homepage has
-  no backend yet. It currently opens the visitor's email client with the
-  details pre-filled (see `assets/js/main.js`). Wire it to your CRM
-  (e.g. SparkMembership) or an email service when ready.
+- **Lead form**: the "Request more information" form on the homepage is
+  marked up to work automatically the moment this site is hosted on
+  Netlify (`data-netlify="true"` + a hidden `form-name` field — Netlify
+  Forms needs nothing else, and submissions land in your Netlify
+  dashboard and can be emailed to you). On any other host, or until then,
+  it falls back to opening the visitor's email client with the details
+  pre-filled, so a submission is never silently lost. See
+  `assets/js/main.js` (`initLeadForm`). To use a different backend
+  (Formspree, a CRM endpoint, etc.), change the form's `action` in
+  `build/build.py` — the fetch-then-fallback logic works unchanged.
 - **Privacy Policy / Terms of Service**: `privacy.html` and `terms.html`
   are placeholders, not real legal text — replace them with your actual
   policies before launch.
@@ -42,10 +48,21 @@ happen once.
   a bully?" and "How do I claim your limited time offer?") are copied
   verbatim from the previous site. The other five are newly written in
   the same voice and should be reviewed for accuracy.
-- **Images**: this build ships without photography (none was available
-  while building). The design currently relies on typography, color, and
-  layout rather than photos — drop real photos of the facility, classes,
-  and instructors into `assets/img/` and reference them in `build/build.py`
-  whenever you're ready.
-- **Blog**: no blog content was migrated. `blog.html` is a holding page
-  that points to Facebook/Instagram in the meantime.
+- **Blog**: `blog.html` plus six posts under `blog/` are new, original
+  content written for this site (not migrated from anywhere) — factual
+  claims lean on the real bios/schedule already in `build/build.py`, but
+  it's still worth a read-through before publishing.
+- **Images — action needed**: this build references six placeholder
+  images that still need to be added to `assets/img/`:
+  `hero-kick.png`, `facility-floor.png`, `belt-knot.png`,
+  `kids-silhouette.png`, `weapons-rack.png`, `jujutsu-grapple.png`.
+  These are generic, non-identifying AI-generated mood shots (no real
+  people, no real signage) generated for this build — this environment's
+  network policy blocked downloading them into the repo automatically,
+  so grab them from the chat where they were shown and drop them in with
+  those exact filenames, or swap in your own real photography using the
+  same filenames. Everything (program pages, About, Schedule, the blog)
+  is already wired to display them at those paths — no code changes
+  needed once the files exist. Cards/banners fall back to a plain
+  parchment-colored box if an image is missing, so nothing breaks in the
+  meantime.

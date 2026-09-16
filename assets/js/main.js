@@ -31,29 +31,81 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Lead form -> opens the visitor's email client with a prefilled message.
-  // This site has no backend, so this is a lightweight, honest fallback
-  // until the form is wired to a real CRM/email service.
-  var leadForm = document.querySelector('#lead-form');
-  if (leadForm) {
-    leadForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var data = new FormData(leadForm);
-      var name = [data.get('first_name'), data.get('last_name')].filter(Boolean).join(' ');
-      var program = data.get('program') || 'Not specified';
-      var phone = data.get('phone') || 'Not provided';
-      var email = data.get('email') || '';
-      var subject = encodeURIComponent('Free trial request — ' + (name || 'New lead'));
-      var body = encodeURIComponent(
-        'Name: ' + name + '\n' +
-        'Phone: ' + phone + '\n' +
-        'Email: ' + email + '\n' +
-        'Program of interest: ' + program + '\n'
-      );
-      window.location.href = 'mailto:scottsdalemartialartscenter@gmail.com?subject=' + subject + '&body=' + body;
-      leadForm.reset();
-      var note = leadForm.querySelector('.form-status');
-      if (note) note.textContent = 'Opening your email app to send this to SMAC…';
-    });
-  }
+  initLeadForm();
 });
+
+// ---------------------------------------------------------------------------
+// Lead form
+//
+// The form is marked up to work out of the box the moment this site is
+// deployed on Netlify (data-netlify="true" + a hidden form-name field is
+// all Netlify Forms needs — no account setup beyond hosting there, and
+// submissions show up in the Netlify dashboard and can be emailed to you).
+//
+// Until then, or if you deploy somewhere else, this script tries a plain
+// form POST first; if that has nowhere to land (any host without form
+// handling), it falls back to opening the visitor's email client with the
+// details pre-filled, so a submission is never silently lost.
+//
+// To switch to a different form backend (Formspree, a CRM endpoint, etc.),
+// just change the form's `action` attribute in build/build.py — this
+// script's fetch-then-fallback logic will keep working unchanged.
+// ---------------------------------------------------------------------------
+function initLeadForm() {
+  var form = document.querySelector('#lead-form');
+  if (!form) return;
+
+  var statusEl = form.querySelector('.form-status');
+  var submitBtn = form.querySelector('button[type="submit"]');
+
+  function setStatus(text) {
+    if (statusEl) statusEl.textContent = text;
+  }
+
+  function mailtoFallback(data) {
+    var name = [data.get('first_name'), data.get('last_name')].filter(Boolean).join(' ');
+    var program = data.get('program') || 'Not specified';
+    var phone = data.get('phone') || 'Not provided';
+    var email = data.get('email') || '';
+    var subject = encodeURIComponent('Free trial request — ' + (name || 'New lead'));
+    var body = encodeURIComponent(
+      'Name: ' + name + '\n' +
+      'Phone: ' + phone + '\n' +
+      'Email: ' + email + '\n' +
+      'Program of interest: ' + program + '\n'
+    );
+    window.location.href = 'mailto:scottsdalemartialartscenter@gmail.com?subject=' + subject + '&body=' + body;
+    setStatus('Opening your email app to send this to SMAC…');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    var action = form.getAttribute('action') || '/';
+
+    if (submitBtn) submitBtn.disabled = true;
+    setStatus('Sending…');
+
+    fetch(action, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString(),
+    })
+      .then(function (res) {
+        if (res.ok) {
+          form.reset();
+          setStatus('Thanks! We’ll be in touch soon.');
+        } else {
+          mailtoFallback(data);
+        }
+      })
+      .catch(function () {
+        // No form backend at this URL (e.g. not hosted on Netlify yet) —
+        // fall back to email so the lead still reaches SMAC.
+        mailtoFallback(data);
+      })
+      .finally(function () {
+        if (submitBtn) submitBtn.disabled = false;
+      });
+  });
+}

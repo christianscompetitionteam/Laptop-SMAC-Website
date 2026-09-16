@@ -90,7 +90,11 @@
           <span class="eyebrow">Exclusive online offer</span>
           <h3>Request more information</h3>
           <p>Tell us a bit about your family and we&rsquo;ll follow up to get you on the mat.</p>
-          <form class="form-grid" id="lead-form">
+          <form class="form-grid" id="lead-form" name="trial-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="trial-request" />
+            <p style="position:absolute; left:-9999px;" aria-hidden="true">
+              <label>Leave this field blank: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+            </p>
             <div class="field">
               <label for="first_name">First name</label>
               <input id="first_name" name="first_name" type="text" required />
